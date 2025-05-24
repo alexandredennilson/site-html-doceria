@@ -33,3 +33,14 @@ h1 {
   background-color: #005fa3;
   transform: scale(1.05);
 }
+
+.galeria {
+  margin-block: 200px;
+  display: grid;
+  justify-content: center;
+}
+
+.galeria img {
+  border-radius: 30px;
+  width: 70dvw;
+}
