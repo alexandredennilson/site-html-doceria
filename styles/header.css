@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  align-items: center;
+
+  padding: 25px 50px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: auto;
+  gap: 50px;
+  list-style: none;
+}
