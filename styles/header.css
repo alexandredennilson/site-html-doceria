@@ -1,25 +1,20 @@
-nav {
+header {
+  padding: 30px;
   display: flex;
   align-items: center;
-
-  padding: 25px 15dvw;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px 60px;
 }
 
-nav ul {
+nav {
   display: flex;
-
-  margin-left: auto;
-  gap: 50px;
-
-  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 60px;
 }
 
-nav ul li a {
-  color: inherit;
+nav a {
   text-decoration: none;
-  font-size: 24px;
-}
-
-nav ul li a:hover {
-  color: brown;
+  color: inherit;
 }
