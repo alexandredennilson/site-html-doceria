@@ -1,18 +1,5 @@
-.hero {
-  text-align: center;
+#hero {
   margin-block: 50px
-}
-
-h1 {
-  font-size: 60px;
-  font-weight: 900;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  max-width: 60dvw;
-  margin-inline: auto;
-  line-height: 40px;
 }
 
 .hero-button {
@@ -34,13 +21,32 @@ h1 {
   transform: scale(1.05);
 }
 
-.galeria {
+#gallery {
   margin-block: 200px;
   display: grid;
   justify-content: center;
 }
 
-.galeria img {
+#gallery img {
   border-radius: 30px;
   width: 70dvw;
+}
+
+#about p {
+  margin-bottom: 30px;
+} 
+
+#about #widget {
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  gap: 25px;
+}
+
+#about #widget div {
+  max-width: 375px;
+  background-color: #ededed;
+  padding: 15px;
+  border-radius: 16px;
 }
