@@ -1,17 +1,32 @@
 #hero {
-  margin-block: 50px
+  margin-top: 5dvh;
+  margin-bottom: 50px;
 }
 
-.hero-button {
-  margin-top: 25px;
+.hero-button-1 {
+  margin-top: 40px;
   display: inline-block;
-  padding: 20px 40px;
+  padding: 20px 30px;
   font-size: 1rem;
   font-weight: bold;
   color: white;
   background-color: #232323;
-  border: none;
-  border-radius: 24px;
+  border: solid rgb(44, 44, 44);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-button-2 {
+  margin-top: 25px;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(45, 45, 45);
+  border: solid rgb(44, 44, 44) 2px;
+  background-color: #ffffff;
+  border-radius: 16px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -22,7 +37,7 @@
 }
 
 #gallery {
-  margin-block: 200px;
+  margin-block: 10dvh;
   display: grid;
   justify-content: center;
 }
@@ -33,7 +48,7 @@
 }
 
 #about p {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 } 
 
 #about #widget {
