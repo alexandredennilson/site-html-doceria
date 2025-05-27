@@ -43,7 +43,7 @@ p {
 
 .break {
   width: 70dvw;
-  height: 1px;
+  height: 2px;
   margin-inline: auto;
   background-color: #efefef;
 }
