@@ -13,6 +13,19 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
       rel="stylesheet"
     />
+    <script>
+  function abrirModal(src) {
+    const modal = document.getElementById('lightbox');
+    const imagem = document.getElementById('imagem-ampliada');
+    imagem.src = src;
+    modal.style.display = 'flex';
+  }
+
+  function fecharModal() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+</script>
+
   </head>
   <body>
     <header>
@@ -30,62 +43,104 @@
       <section id="hero">
         <h1>Sabor de sonhar</h1>
         <p>
-          Com ingredientes selecionados e muito carinho, criamos bolos e doces deliciosos que tornam seus momentos mais inesquecíveis.
+          Com ingredientes selecionados e muito carinho, criamos bolos e doces
+          deliciosos que tornam seus momentos mais inesquecíveis.
+        </p>
+
         <div>
-          <a href="#" class="hero-button-1">Fazer pedido</a>
+          <a href="https://wa.me/558173174407" target="_blank" class="hero-button-1">Fazer pedido</a>
           <a href="#about" class="hero-button-2">Conhecer</a>
         </div>
         <div id="gallery">
-          <img src="assets/galeria-1.png" alt="Imagem de bolo" />
+          <!-- Imagem clicável -->
+          <img
+            src="assets/galeria-1.png"
+            alt="Bolo"
+            class="thumbnail"
+            onclick="abrirModal(this.src)"
+          />
+
+          <!-- Modal (Lightbox) -->
+          <div id="lightbox" class="modal" onclick="fecharModal()">
+            <span class="fechar" onclick="fecharModal()">×</span>
+            <img id="imagem-ampliada" class="modal-img" />
+          </div>
         </div>
       </section>
 
       <div class="break"></div>
-      
-    <section id="about">
-      <h2>Quem Somos</h2>
-      <p>
-        Somos apaixonados por transformar ingredientes simples em momentos inesquecíveis. Cada bolo que fazemos é pensado com carinho, cuidado nos detalhes e aquele sabor caseiro que acolhe. Valorizamos a qualidade, o frescor e a beleza em cada receita — seja para celebrar uma data especial ou apenas adoçar o dia a dia.
 
-        Mais do que bolos, entregamos afeto em forma de massa, recheio e cobertura.
-      </p>
+      <section id="about">
+        <h2>Quem Somos</h2>
+        <p>
+          Somos apaixonados por transformar ingredientes simples em momentos
+          inesquecíveis. Cada bolo que fazemos é pensado com carinho, cuidado
+          nos detalhes e aquele sabor caseiro que acolhe. Valorizamos a
+          qualidade, o frescor e a beleza em cada receita — seja para celebrar
+          uma data especial ou apenas adoçar o dia a dia. Mais do que bolos,
+          entregamos afeto em forma de massa, recheio e cobertura.
+        </p>
 
-      <div id="widget">
-        <div>
-          <h3>Propósito</h3>
-          <p>Levar carinho e sabor em cada fatia, fazendo com que cada momento seja doce, especial e cheio de afeto.</p>
+        <div id="widget">
+          <div>
+            <h3>Propósito</h3>
+            <p>
+              Levar carinho e sabor em cada fatia, fazendo com que cada momento
+              seja doce, especial e cheio de afeto.
+            </p>
+          </div>
+          <div>
+            <h3>Sonho</h3>
+            <p>
+              Ser reconhecidos por espalhar doçura e afeto em cada lar,
+              conquistando corações com nossas receitas e cuidado artesanal.
+            </p>
+          </div>
+          <div>
+            <h3>Compromisso</h3>
+            <p>
+              Com carinho e dedicação, valorizamos a criatividade e o respeito
+              para entregar sempre o melhor aos nossos clientes.
+            </p>
+          </div>
         </div>
-        <div>
-          <h3>Sonho</h3>
-          <p>Ser reconhecidos por espalhar doçura e afeto em cada lar, conquistando corações com nossas receitas e cuidado artesanal.</p>
+      </section>
+
+      <div class="break"></div>
+
+      <section id="menu">
+        <h2>Seu sabor</h2>
+        <div id="gallery">
+          <!-- Imagem clicável -->
+          <img
+            src="assets/menu-1.png"
+            alt="Bolo"
+            class="thumbnail"
+            onclick="abrirModal(this.src)"
+          />
+
+          <!-- Modal (Lightbox) -->
+          <div id="lightbox" class="modal" onclick="fecharModal()">
+            <span class="fechar" onclick="fecharModal()">×</span>
+            <img id="imagem-ampliada" class="modal-img" />
+          </div>
         </div>
+      </section>
+
+      <div class="break"></div>
+
+      <section id="contact">
+        <h2>Fale conosco</h2>
+        <p>
+          Estamos disponíveis para dúvidas, parcerias ou suporte. Escolha a
+          melhor forma de falar com a gente:
+        </p>
         <div>
-          <h3>Compromisso</h3>
-          <p>Com carinho e dedicação, valorizamos a criatividade e o respeito para entregar sempre o melhor aos nossos clientes.</p>
+          <a href="#" class="thumbnail"><img src="assets/instagram.svg" alt="" /></a>
+          <a href="#" class="thumbnail"><img src="assets/whatsapp.svg" alt="" /></a>
+          <a href="#" class="thumbnail"><img src="assets/facebook.svg" alt="" /></a>
+          <a href="#" class="thumbnail"><img src="assets/github.svg" alt="" /></a>
         </div>
-      </div>
-    </section>
-
-    <div class="break"></div>
-
-    <section id="menu">
-      <h2>Seu sabor</h2>
-      <img src="assets/menu-1.png" alt="">
-    </section>
-
-    <div class="break"></div>
-
-    <section id="contact">
-      <h2>Fale conosco</h2>
-      <p>
-        Estamos disponíveis para dúvidas, parcerias ou suporte. Escolha a melhor forma de falar com a gente:
-      </p>
-      <div>
-        <a href="#"><img src="assets/instagram.svg" alt=""></a>
-        <a href="#"><img src="assets/whatsapp.svg" alt=""></a>
-        <a href="#"><img src="assets/facebook.svg" alt=""></a>
-        <a href="#"><img src="assets/github.svg" alt=""></a>
-      </div>
       </section>
 
       <div class="break"></div>
@@ -95,40 +150,41 @@
       <p>&copy; 2025 Doceria Belly. Todos os direitos reservados.</p>
     </footer>
 
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-          const startPosition = window.pageYOffset;
-          const distance = targetPosition - startPosition;
-          const duration = 1000;
-          let start = null;
-          
-          function animation(currentTime) {
-            if (start === null) start = currentTime;
-            const timeElapsed = currentTime - start;
-            const run = ease(timeElapsed, startPosition, distance, duration);
-            window.scrollTo(0, run);
-            if (timeElapsed < duration) requestAnimationFrame(animation);
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            const targetPosition =
+              targetElement.getBoundingClientRect().top + window.pageYOffset;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 1000;
+            let start = null;
+
+            function animation(currentTime) {
+              if (start === null) start = currentTime;
+              const timeElapsed = currentTime - start;
+              const run = ease(timeElapsed, startPosition, distance, duration);
+              window.scrollTo(0, run);
+              if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+
+            function ease(t, b, c, d) {
+              t /= d / 2;
+              if (t < 1) return (c / 2) * t * t + b;
+              t--;
+              return (-c / 2) * (t * (t - 2) - 1) + b;
+            }
+
+            requestAnimationFrame(animation);
           }
-          
-          function ease(t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t + b;
-            t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
-          }
-          
-          requestAnimationFrame(animation);
-        }
+        });
       });
-    });
-  </script>
+    </script>
   </body>
 </html>
